@@ -3,13 +3,21 @@
 <head>
     <title>Register an Account</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
 </head>
 <body>
-	<h1>Register:</h1>
-    <form action="#" th:action="@{/register}" th:object="${register}" method="post">
-    	<p>Username: <input type="text" th:field="*{username}" /></p>
-        <p>Password: <input type="text" th:field="*{password}" /></p>
-        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+	<div class="registration-form">
+	<h1 class="center">Register</h1>
+    <form class="form" action="#" th:action="@{/register}" th:object="${register}" method="post">
+    	<p>Username: <input type="text" th:field="*{username}"/></p>
+        <p>Password: <input type="password" th:field="*{password}" /></p>
+        <p><input class="btn btn-secondary" type="submit" value="Submit" /> <input class="btn btn-secondary" type="reset" value="Reset" /></p>
     </form>
+    </div>
+    <a class="github-image" href="https://github.com/eascend">
+		<img border="50" alt="https://github.com/eascend" src="https://2sxc.org/Portals/0/adam/Content/4IqBjx3pXEC7a7-fVX2GBQ/Image/github-logo.png" width="100" height="100">
+	</a>
 </body>
+
 </html>
