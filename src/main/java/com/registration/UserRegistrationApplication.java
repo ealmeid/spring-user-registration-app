@@ -1,3 +1,7 @@
+/**
+ * Just our Application file to run everything, everything's packaged 
+ * and run through main().
+ */
 package com.registration;
 
 import org.springframework.boot.SpringApplication;

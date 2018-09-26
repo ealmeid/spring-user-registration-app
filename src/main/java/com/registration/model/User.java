@@ -1,4 +1,9 @@
-//POJO (Plain Old Java Object)
+/**
+ * User Entity class (aka our POJO - Plain Old Java Object). This is where the
+ * values/attributes (columns in our database) are created. The table is also
+ * created as well. This class will allow us to set and get the username, password
+ * and id.
+ */
 
 package com.registration.model;
 

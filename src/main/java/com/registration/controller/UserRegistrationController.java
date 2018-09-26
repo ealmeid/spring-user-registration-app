@@ -1,3 +1,10 @@
+/**
+ * Our controller class, this is what will handle our http endpoints and present
+ * the views to the users. This is also where we deal with saving users
+ * to the H2 database, and finding out if a specific user exists within
+ * the database.
+ */
+
 package com.registration.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
