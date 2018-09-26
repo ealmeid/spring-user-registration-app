@@ -10,12 +10,11 @@
 	<div class="registration-form">
 		<div class="form">
 			<br>
-			<h2>Registration Status:</h2>
+			<h2>Uh Oh!</h2>
 			<br>
-			<p>Success! Your account has been registered!</p>
-		    <p>Your Username is: <b th:text="${user.username}" /></b></p>
-		    <p>Your Password is: <b th:text="${user.password}" /></b></p>
-		    <a class="btn btn-secondary" href="/register">Register another account!</a>
+			<p>It seems that username is already taken, please try signing up again with a different one!</p>
+			<br>
+		    <a class="btn btn-secondary" href="/register">Go back!</a>
     	</div>
     </div>
 </body>

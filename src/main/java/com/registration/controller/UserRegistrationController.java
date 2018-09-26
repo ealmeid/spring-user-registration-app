@@ -23,8 +23,11 @@ public class UserRegistrationController {
 
     @PostMapping("/register")
     public String greetingSubmit(@ModelAttribute User user) {
-    	userRepository.save(user);
-        return "registrationStatus";
+    	if(userRepository.findByUsername(user.getUsername())==null){
+        	userRepository.save(user);
+        	return "registrationStatus";
+    	}
+        return "registrationError";
     }
 
 }
